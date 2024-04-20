@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <main className=" mb-52">
 
-      <CarouselBannerWrapper   />
+      <CarouselBannerWrapper id="" />
 
 
 
