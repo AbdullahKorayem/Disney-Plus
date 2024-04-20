@@ -23,10 +23,3 @@ export default async function getBase64(imageUrl: string) {
   }
 }
 
-
-// export async function addBlurredDataUrls(images: ImagesResults): Promise<Photo[]> {
-//   const base64Promise = images.photos.map(photo => getBase64(photo.src.large))
-//   const base64Promis = await Promise.all(base64Promise)
-//   const photoWithBlur: Photo[] = images.photos.map((photo, i) => { photo.blurDataURL = base64Promis[i]; return photo })
-//   return photoWithBlur
-// }
