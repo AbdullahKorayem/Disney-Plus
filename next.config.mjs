@@ -8,16 +8,16 @@ const nextConfig = {
                 protocol: "https",
                 hostname: "links.papreact.com",
             }, {
-            
+
                 protocol: "https",
                 hostname: "links.papareact.com",
             }, {
                 protocol: 'https',
                 hostname: 'image.tmdb.org'
             }
-          
+
         ]
     }
-};
+}
 
 export default withPlaiceholder(nextConfig);

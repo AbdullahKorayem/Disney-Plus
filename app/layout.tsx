@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Disney+ Clone",
   description: "For Educational Purposes",
+  
 };
 
 export default function RootLayout({
@@ -15,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      
       <body className=" bg-white dark:bg-[#1A1C29]">
         <ThemeProvider
           attribute="class"
