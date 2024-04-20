@@ -33,7 +33,7 @@ export default async function GenreDropdown() {
 	const data = (await response.json()) as Genres;
 
 	
-	return <>
+	return <div>
 		<DropdownMenu>
 			<DropdownMenuTrigger className="text-white flex justify-center items-center">
 				Genre <Image className="ml-1" src="chevron-small-down.svg" alt="arrow-down" width={28} height={28} />
@@ -46,5 +46,5 @@ export default async function GenreDropdown() {
 				
 			</DropdownMenuContent>
 		</DropdownMenu>
-	</>
+	</div>
 }
