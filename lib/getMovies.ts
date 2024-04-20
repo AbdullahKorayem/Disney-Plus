@@ -14,7 +14,7 @@ async function fetchFromTMDB(url: URL, cacheTime?: number) {
             Authorization: `Bearer ${process.env.TMDB_API_KEY}`
         },
         next: {
-            revalidate: cacheTime || 60 * 60 * 24
+            revalidate: 60 * 60 * 24
         }
     }
 
