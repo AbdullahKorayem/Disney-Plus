@@ -15,7 +15,7 @@ function CarouselsBanner({ movies }: { movies: Movie[] }) {
     return (
         <div className='overflow-hidden relative lg:mt-100 cursor-pointer' ref={emblaRef}>
             <div className='flex'>
-                {movies.map((movie) => (
+                {movies?.map((movie) => (
                     <div key={movie.id} className='min-w-0 relative flex-[0_0_100%] w-full'>
                         <Image
                             quality={80}
