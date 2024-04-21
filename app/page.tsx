@@ -1,6 +1,7 @@
 import CarouselBannerWrapper from "@/components/CarouselBannerWrapper";
 import MoviesCarousel from "@/components/MoviesCarousel";
 import { getPopularMovies, getTopRatedMovies, getUpComingMovies } from "@/lib/getMovies";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export default async function Home() {
@@ -17,11 +18,11 @@ export default async function Home() {
 
 
 
-        <MoviesCarousel title="Upcoming" movies={upComingMovies} />
-        <MoviesCarousel title="Top Rated" movies={topRatedMovies} />
-        <MoviesCarousel title="Popular" movies={popularMovies} />
+      <MoviesCarousel title="Upcoming" movies={upComingMovies} />
+      <MoviesCarousel title="Top Rated" movies={topRatedMovies} />
+      <MoviesCarousel title="Popular" movies={popularMovies} />
 
-      
+      <SpeedInsights />
     </main>
   );
 }
